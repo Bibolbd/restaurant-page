@@ -57,27 +57,27 @@ body {
   padding: 0.5rem 6rem;
 }
 
-nav {
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-nav > div {
+.navItems {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4em;
 }
 
-main {
+.main {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-main > section {
+.mainSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,6 +85,6 @@ main > section {
   gap: 1.5rem;
 }
 
-main > img {
+.mainImage {
   width: 350px;
 }
