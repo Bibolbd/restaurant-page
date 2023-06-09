@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import "../styles/index.css";
 import ramenLogo from "../assets/logo.png";
 import ramen from "../assets/ramen.png";
 

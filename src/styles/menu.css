@@ -1,0 +1,75 @@
+.cardContainer {
+  width: 450px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 16px;
+  gap: 16px;
+  background: #e6decb;
+  border: 2px solid #d8442e;
+}
+
+.name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--black);
+}
+
+.price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--red);
+}
+
+.image {
+  width: 446px;
+  height: 300px;
+}
+
+.namePrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 400px;
+  height: 36px;
+}
+
+.nameDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 400px;
+  height: 78px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5em;
+  grid-row-gap: 5em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
