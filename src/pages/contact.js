@@ -15,10 +15,10 @@ function contact() {
   image.src = ramen;
   oishi.textContent = "おいしい!";
 
-  image.classList.add("image");
+  image.classList.add("mainImage");
   oishi.classList.add("oishi");
-  main.classList.add("main");
-  section.classList.add("section");
+  main.classList.add("mainContact");
+  section.classList.add("sectionContact");
 
   section.appendChild(oishi);
 
@@ -42,9 +42,6 @@ function contact() {
 
   main.appendChild(image);
   main.appendChild(section);
-
-  content.classList.add("content");
-
   content.appendChild(main);
 }
 

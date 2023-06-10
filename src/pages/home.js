@@ -6,6 +6,7 @@ function home() {
   const content = document.querySelector("#content");
 
   //creating elements for main content
+  const main = document.createElement("main")
   const section = document.createElement("section");
   const headingRamen = document.createElement("p");
   const heading = document.createElement("p");
@@ -21,18 +22,21 @@ function home() {
   image.src = ramen;
 
   //add class list to elements that need css
-  headingRamen.classList.add("heading");
+  headingRamen.classList.add("headingRamen");
   heading.classList.add("heading");
   paragraph.classList.add("paragraph");
   image.classList.add("mainImage");
   section.classList.add("mainSection");
+  main.classList.add("mainHome");
 
   //append elements to another elements
   section.appendChild(headingRamen);
   section.appendChild(heading);
   section.appendChild(paragraph);
-  content.appendChild(section)
-  content.appendChild(image)
+  main.appendChild(section);
+  main.appendChild(image);
+
+  content.appendChild(main)
 }
 
-export default home
+export default home;

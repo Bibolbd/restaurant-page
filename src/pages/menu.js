@@ -10,7 +10,9 @@ import { menuItems } from "../consts/index.js";
 
 function menu() {
   const content = document.querySelector("#content");
-  content.classList.add("content")
+  
+  const main = document.createElement("main")
+  main.classList.add("mainMenu")
 
   //display all ramen cards
   const keys = Object.keys(menuItems);
@@ -48,8 +50,10 @@ function menu() {
     cardContainer.appendChild(image);
     cardContainer.appendChild(nameDesc);
 
-    content.appendChild(cardContainer);
+    main.appendChild(cardContainer);
   });
+
+  content.appendChild(main)
 }
 
 export default menu;

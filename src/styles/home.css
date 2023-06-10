@@ -1,17 +1,27 @@
-.mainSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-
 .mainImage {
   width: 350px;
 }
 
-.content {
+.mainSection {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.headingRamen {
+  font-family: "Poppins";
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.mainHome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
