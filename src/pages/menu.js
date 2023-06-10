@@ -7,42 +7,10 @@ import shoyu from "../assets/shoyu.jpg";
 import spicy from "../assets/spicy.jpg";
 import vegetable from "../assets/vegetable.jpg";
 import { menuItems } from "../consts/index.js";
-import ramenLogo from "../assets/logo.png";
 
 function menu() {
   const content = document.querySelector("#content");
-
-  //creating elements
-  const nav = document.createElement("nav");
-  const logo = new Image();
-  const navItems = document.createElement("div");
-  const navItemHome = document.createElement("p");
-  const navItemMenu = document.createElement("p");
-  const navItemContact = document.createElement("p");
-  const main = document.createElement("main")
-
-  //assigning content of elements
-  logo.src = ramenLogo;
-  navItemHome.textContent = "home";
-  navItemMenu.textContent = "menu";
-  navItemContact.textContent = "contact";
-
-  //add class list to elements that need css
-  navItemHome.classList.add("navItem");
-  navItemMenu.classList.add("navItem");
-  navItemContact.classList.add("navItem");
-  navItems.classList.add("navItems");
-  nav.classList.add("navigation");
-  main.classList.add("main")
   content.classList.add("content")
-
-  //append navigation bar
-  nav.appendChild(logo);
-  nav.appendChild(navItems);
-  navItems.appendChild(navItemHome);
-  navItems.appendChild(navItemMenu);
-  navItems.appendChild(navItemContact);
-  content.appendChild(nav);
 
   //display all ramen cards
   const keys = Object.keys(menuItems);
@@ -65,7 +33,7 @@ function menu() {
     price.textContent = menuItems[key].price;
     description.textContent = menuItems[key].description;
 
-    image.classList.add("image");
+    image.classList.add("ramenImage");
     name.classList.add("name");
     price.classList.add("price");
     cardContainer.classList.add("cardContainer");
@@ -80,11 +48,8 @@ function menu() {
     cardContainer.appendChild(image);
     cardContainer.appendChild(nameDesc);
 
-    main.appendChild(cardContainer);
+    content.appendChild(cardContainer);
   });
-
-  //append elements to another elements
-  content.appendChild(main);
 }
 
 export default menu;

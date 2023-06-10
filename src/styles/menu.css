@@ -28,7 +28,7 @@
   color: var(--red);
 }
 
-.image {
+.ramenImage {
   width: 446px;
   height: 300px;
 }
@@ -53,23 +53,10 @@
   height: 78px;
 }
 
-.main {
+.content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 5em;
   grid-row-gap: 5em;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4em;
-}
-
-body {
-    width: 100%;
-    height: auto;
 }

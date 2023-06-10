@@ -1,38 +1,10 @@
 import "../styles/contact.css";
 import "../styles/index.css";
-import ramenLogo from "../assets/logo.png";
 import ramen from "../assets/ramen.png";
 import { contactInfo } from "../consts";
 
 function contact() {
   const content = document.querySelector("#content");
-
-  //navigation bar
-  const nav = document.createElement("nav");
-  const logo = new Image();
-  const navItems = document.createElement("div");
-  const navItemHome = document.createElement("p");
-  const navItemMenu = document.createElement("p");
-  const navItemContact = document.createElement("p");
-
-  logo.src = ramenLogo;
-  navItemHome.textContent = "home";
-  navItemMenu.textContent = "menu";
-  navItemContact.textContent = "contact";
-
-  navItemHome.classList.add("navItem");
-  navItemMenu.classList.add("navItem");
-  navItemContact.classList.add("navItem");
-  navItems.classList.add("navItems");
-  nav.classList.add("navigation");
-
-  nav.appendChild(logo);
-  nav.appendChild(navItems);
-  navItems.appendChild(navItemHome);
-  navItems.appendChild(navItemMenu);
-  navItems.appendChild(navItemContact);
-
-  content.appendChild(nav);
 
   //main content
   const main = document.createElement("main");
