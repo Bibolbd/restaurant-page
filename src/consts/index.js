@@ -31,10 +31,21 @@ export const menuItems = [
   },
 ];
 
-export const contactInfo = {
-  name: "Ramen Master",
-  address: "123 Sakura Street, Tokyo",
-  phone: "+1 123-456-7890",
-  email: "info@ramenmaster.com",
-  website: "www.ramenmaster.com",
-};
+export const contactInfo = [
+  {
+    label: "address",
+    text: "123 Sakura Street, Tokyo"
+  },
+  {
+    label: "phone",
+    text: "+1 123-456-7890"
+  },
+  {
+    label: "email",
+    text: "info@ramenmaster.com"
+  },
+  {
+    label: "website",
+    text: "www.ramenmaster.com"
+  },
+];
